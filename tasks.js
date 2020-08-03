@@ -384,3 +384,66 @@
 //   posibility.textContent =
 //     elem.move.name[0].toUpperCase() + elem.move.name.slice(1);
 // });
+
+// *************
+//? два квадратика с цифрами 1 и 2, поменять местами цифры
+//? при нажатии меняются местами цифры
+//? Поменять местами контент при клике
+// let body = document.querySelector("body");
+// let firstBox = document.createElement("p");
+// let secondBox = document.createElement("p");
+
+// body.append(firstBox);
+// body.append(secondBox);
+
+// firstBox.textContent = "1";
+// secondBox.textContent = "2";
+
+// const showTxt = function () {
+//   if (firstBox.textContent === "1" || secondBox.textContent === "2") {
+//     firstBox.textContent = "2";
+//     secondBox.textContent = "1";
+//   } else {
+//     firstBox.textContent = "1";
+//     secondBox.textContent = "2";
+//   }
+// };
+
+// firstBox.addEventListener("click", showTxt);
+// secondBox.addEventListener("click", showTxt);
+
+// *******************
+//? Меняет цвет боди инпутом
+
+// let body = document.querySelector("body");
+// let input = document.querySelector("Input");
+
+// input.addEventListener(
+//   "change",
+//   (event) => (body.style.backgroundColor = event.target.value)
+// );
+
+// *************************
+//? При нажатии на кнопку создаётся квадрат, при изменение инпута (range) - меняется его размер (размер грани должен быть больше 100 пикселей)
+//? При нажатии на вторую кнопку - квадрат удаляется
+// let body = document.querySelector("body");
+// body.innerHTML = `<button class="btn" type="button"> Create box </button> <input class="input" type="range"> </input> <button class="btnClose" type="button">Remove box </button>`;
+// const btn = document.querySelector(".btn");
+// const range = document.querySelector(".input");
+// const btnClose = document.querySelector(".btnClose");
+
+// btn.addEventListener("click", () => {
+//   let box = document.createElement("div");
+//   body.appendChild(box);
+//   box.classList.add("newBox");
+
+//   range.addEventListener("input", (event) => {
+//     box.style.height = `${+event.target.value + 100}px`;
+//     box.style.width = `${+event.target.value + 100}px`;
+//   });
+//   btnClose.addEventListener("click", () => {
+//     if (box) {
+//       body.removeChild(box);
+//     }
+//   });
+// });
