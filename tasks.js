@@ -447,3 +447,37 @@
 //     }
 //   });
 // });
+
+// ****************
+//?   Напишите скрипт который реализует следующий функционал.
+//?   Есть кнопка с классом button, текст которой отображает
+//?   кол-во раз которое по ней кликнули, обновляется при каждом клике.
+
+// let btn = document.querySelector(".button");
+// let counter = 0;
+
+// btn.addEventListener("click", () => {
+//   counter += 1;
+//   btn.textContent = counter;
+// });
+//**************
+// ?  Даны 2 инпута, абзац и кнопка. По нажатию на кнопку
+// ?  получите числа которые бьудут введены в инпуты и запишите их сумму в span.result.
+
+// let sum = document.querySelector(".sum");
+// let inpFirst = document.querySelector(".inpFirst");
+// let inpSec = document.querySelector(".inpSec");
+// let btn = document.querySelector(".button");
+// let result = Number;
+// btn.addEventListener("click", () => {
+//   result = Number(inpFirst.value) + Number(inpSec.value);
+//   sum.textContent = result;
+//   console.log(result);
+// });
+
+//?   Есть форма с набором радиокнопок. Пользователь выбирает вариант ответа,
+//?   после чего нажимает кнопку "Submit" и происходит отправка формы.
+
+//   При отправке формы:
+//     - не должна перезагружаться страница
+//     - необходимо получить выбранную опцию и вывести в параграф с классом .result
