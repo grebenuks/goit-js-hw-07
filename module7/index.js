@@ -9,10 +9,9 @@
 //? Категория: Животные
 //? Количество элементов: 4
 
-// const categories = document.querySelector("#categories");
-// const listCategories = document.querySelectorAll(".item");
+// const listCategories = document.querySelectorAll("#categories .item");
 
-// console.log(`В списке ${categories.children.length} категории.`);
+// console.log(`В списке ${listCategories.length} категории.`);
 
 // listCategories.forEach((item) =>
 //   console.log(`Категория: ${item.firstElementChild.textContent}
@@ -83,7 +82,36 @@
 //? Создай переменную counterValue в которой будет хранится текущее значение счетчика.
 //? Создай функции increment и decrement для увеличения и уменьшения значения счетчика
 //? Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
+// Основной вариант
+// const btnPlusOne = document.querySelector("[data-action=increment]");
+// const btnMinusOne = document.querySelector("[data-action=decrement]");
+// const value = document.querySelector("#value");
+// let counterValue = 0;
 
+// let increment = () => {
+//   updateData("increment");
+//   updateVueSpan();
+// };
+
+// let decrement = () => {
+//   updateData("decrement");
+//   updateVueSpan();
+// };
+
+// let updateData = (str) => {
+//   if (str === "increment") {
+//     counterValue += 1;
+//   } else counterValue -= 1;
+// };
+
+// let updateVueSpan = () => {
+//   value.textContent = counterValue;
+// };
+
+// btnPlusOne.addEventListener("click", increment);
+// btnMinusOne.addEventListener("click", decrement);
+
+// 2ой вариант
 // const btnPlusOne = document.querySelector("[data-action=increment]");
 // const value = document.querySelector("#value");
 // const btnMinusOne = document.querySelector("[data-action=decrement]");
