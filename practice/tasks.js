@@ -480,6 +480,7 @@
 //?   При отправке формы:
 //?     - не должна перезагружаться страница
 //?     - необходимо получить выбранную опцию и вывести в параграф с классом .result
+
 // *****************
 
 //?  Дан список изображений. Сделайте так, чтобы по клику на картинку
@@ -495,3 +496,23 @@
 //     alert(e.target.src);
 //   }
 // });
+
+//? 2ой вариант
+// let gallery = document.querySelector(".gallery");
+// const images = function (quantity) {
+//   for (let i = 0; i < quantity; i++) {
+//     gallery.innerHTML += `<li><img src='https://picsum.photos/id/${i}/200/300'></li>`;
+//   }
+// };
+// images(3);
+
+// gallery.addEventListener("click", (e) => {
+//   if (e.target.nodeName === "IMG") {
+//     alert(e.target.src);
+//   }
+// });
+// gallery.style.margin = "0 auto";
+// gallery.style.width = "800px";
+// gallery.style.display = "flex";
+// gallery.style.listStyle = "none";
+// gallery.style.justifyContent = "space-between";
